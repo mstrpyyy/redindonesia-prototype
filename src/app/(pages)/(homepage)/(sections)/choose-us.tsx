@@ -78,7 +78,7 @@ export const ChooseUsHomeSection = () => {
         />
       </div>
 
-      <div className='w-screen h-screen fixed top-0 left-0 -z-50'/>
+      <div className='w-screen h-screen fixed top-0 left-0 -z-40'/>
 
 
     </section>

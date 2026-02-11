@@ -52,11 +52,11 @@ export const BrandHomeSection = () => {
     <section
       ref={brandRef}
       className={`
-        py-24 flex flex-col items-center transition-colors duration-700
+        py-14 flex flex-col items-center transition-colors duration-700
         ${
           isWhiteBg
             ? 'bg-linear-to-t from-white to-white backdrop-blur-xl'
-            : 'bg-linear-to-t from-white to-white/10 backdrop-blur-xl'
+            : 'bg-linear-to-t from-white to-transparent backdrop-blur-xl'
         }
       `}
     >

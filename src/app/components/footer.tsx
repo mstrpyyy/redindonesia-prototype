@@ -77,7 +77,7 @@ export const Footer = () => {
     <footer className='bg-black text-white flex max-md:flex-col gap-5 xl:gap-10 2xl:gap-16 px-10 2xl:px-20 py-10 text-xs xl:text-base font-light'>
       {/* COMPANY INFO */}
       <div className='space-y-6 mr-auto w-full md:w-60 2xl:w-72'>
-        <Image alt='logo red' src={'/image/Logo-RED_2020_small_final_white.png'} width={362} height={91} className='w-full max-w-60 2xl:max-w-72' />
+        <Image alt='logo red' src={'/image/logo-red-white.png'} width={362} height={91} className='w-full max-w-60 2xl:max-w-72' />
 
         <div className="h-44 w-full rounded-lg overflow-hidden">
           <iframe 

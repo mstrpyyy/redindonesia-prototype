@@ -4,10 +4,14 @@ import { HeroHomeSection } from "./(sections)/hero";
 import { StatCounter } from "./(sections)/stat-counter";
 import { VideoHomeSection } from "./(sections)/video";
 import { ChooseUsHomeSection } from "./(sections)/choose-us";
-import { CredibilityHomeSection } from "./(sections)/certification";
+import { CredibilityHomeSection } from "./(sections)/credibility";
 import { BrandHomeSection } from "./(sections)/brand";
 import { ProductHomeSection } from "./(sections)/products";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: 'Home'
+};
 
 export default function Home() {
   return (
@@ -41,13 +45,13 @@ export default function Home() {
           <BrandHomeSection />
 
           {/* CREDIBILITY */}
-          <BodyWrapper className="py-14 bg-brand-pink">
+          <BodyWrapper className="py-10 sm:py-24 bg-brand-pink" id='certified-component'>
             <CredibilityHomeSection />
           </BodyWrapper>
 
           {/* PRODUCTS */}
           <BodyWrapper className="py-24 bg-white">
-            <div className="space-y-14">
+            <div className="space-y-20">
               <ProductHomeSection />
               <ProductHomeSection />
             </div>

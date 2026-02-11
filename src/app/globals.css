@@ -97,6 +97,37 @@
   }
 }
 
+@keyframes spinIn {
+  0% {
+    transform: rotate(-360deg) scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes spinOut {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg) scale(0.3);
+    opacity: 0;
+  }
+}
+
+.spin-in {
+  animation: spinIn 0.7s ease-out forwards;
+}
+
+.spin-out {
+  animation: spinOut 0.7s ease-in forwards;
+}
+
+
 /* Thumb-only scrollbar */
 .scrollbar-thumb-only {
   scrollbar-width: 30px;              /* Firefox */

@@ -43,7 +43,7 @@ export const Navbar = () => {
   return (
     <header 
       className={`
-        fixed flex items-center z-50 px-4 text-base transition-all duration-300
+        fixed flex items-center z-40 px-4 text-base transition-all duration-300
         ${NAVBAR_HEIGHT} w-full ${textColor}
         ${darkenBg && !isWhiteNav ? 'bg-black/70' : isWhiteNav ? 'bg-white shadow-md' : 'bg-linear-to-b from-black/50 to-transparent'}
         
@@ -51,7 +51,7 @@ export const Navbar = () => {
     >
       <div className="flex-1 max-w-64 lg:max-w-52">
        <Image 
-         src={isWhiteNav ? "/image/Logo-RED_2020_small_final_black.png" : "/image/Logo-RED_2020_small_final_white.png"} 
+         src={isWhiteNav ? "/image/logo-red-black.png" : "/image/logo-red-white.png"} 
          alt="logo" 
          width={362} 
          height={91} 

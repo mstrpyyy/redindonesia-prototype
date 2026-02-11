@@ -23,7 +23,7 @@ const credibleList = [
 
 export const CredibilityHomeSection = () => {
   return (
-    <section className='flex gap-8 xl:gap-10 2xl:gap-20' id='certified-component'>
+    <section className='flex gap-8 xl:gap-10 2xl:gap-20'>
 
       <Image
         src={'/image/group-photo.png'}
@@ -42,8 +42,6 @@ export const CredibilityHomeSection = () => {
         <div className="flex max-sm:flex-wrap gap-8 items-center justify-center my-auto">
           {credibleList.map((item, index) => (
             <div
-              data-aos="fade-right"
-              data-aos-delay={(150+index*150).toString()}
               key={index}
               className="flex-1 flex items-center justify-center h-32 xl:h-36 max-sm:min-w-44 max-sm:max-w-52"
             >
@@ -52,6 +50,8 @@ export const CredibilityHomeSection = () => {
                 alt={item.alt}
                 width={item.width}
                 height={item.height}
+                data-aos="fade-right"
+                data-aos-delay={(200+index*200).toString()}
                 className="max-h-full w-auto object-contain"
               />
             </div>
