@@ -7,6 +7,8 @@
   --breakpoint-xs: 25rem;
   --color-brand-red: oklch(0.57 0.23 27);
   --color-brand-pink: #fce8e9;
+  --color-brand-peach: #FFBD98;
+  --text-xxs: 0.625rem;
 }
 
 @theme inline {
@@ -160,6 +162,10 @@
   @apply text-3xl sm:text-4xl xl:text-5xl font-bold leading-10 sm:leading-12 xl:leading-16 text-pretty;
 }
 
+.h2-md-format {
+  @apply text-2xl sm:text-3xl xl:text-4xl font-bold leading-10 sm:leading-12 text-balance;
+}
+
 .h2-sm-format {
   @apply text-2xl xl:text-3xl font-semibold xl:leading-10;
 }
@@ -168,11 +174,24 @@
   @apply text-xl sm:text-2xl xl:text-3xl font-semibold;
 }
 
+.h3-sm-format {
+  @apply text-base sm:text-lg xl:text-xl font-semibold;
+}
+
 .p-format {
   @apply lg:text-lg 2xl:text-xl font-light text-justify leading-8 2xl:leading-10;
 }
 
+.p-sm-format {
+  @apply text-sm lg:text-base 2xl:text-lg font-light text-justify leading-6 lg:leading-7 2xl:leading-8;
+}
+
+
 .title-limiter {
   @apply max-w-[700px] xl:max-w-[900px] text-balance;
+}
+
+.text-shadow {
+  @apply text-shadow-[0px_0.5px_2px_rgba(0,0,0,1)]
 }
 

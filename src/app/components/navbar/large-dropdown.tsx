@@ -100,7 +100,7 @@ export const LargeDropdown = ({ name, NAVBAR_HEIGHT, TOP_HEIGHT, isWhiteNav, set
         <div
           className={`fixed left-0 w-screen h-screen md:max-h-150 lg:max-h-100 text-white ${TOP_HEIGHT}`}
         >
-          <div className="h-full bg-black/80 backdrop-blur-md border-t border-t-neutral-400 flex py-4">
+          <div className="h-full bg-black/80 backdrop-blur-md border-y border-t-neutral-400 border-b-neutral-700 flex py-4">
             <div className="flex flex-col h-full w-64 border-r px-4">
                {deviceProductMenu.map((parent, index) => (
                   <Fragment key={parent.slug}>

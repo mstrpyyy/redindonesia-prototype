@@ -1,4 +1,4 @@
-import { ProductCarousel } from "@/app/components/product-carousel"
+import { ProductCarousel } from "@/app/components/carousels"
 import { Button } from "@/components/ui/button"
 import { MoveRight } from "lucide-react"
 import Link from "next/link"

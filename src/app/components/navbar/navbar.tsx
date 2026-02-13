@@ -19,7 +19,8 @@ export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false)
 
   // Determine if navbar should be white
-  const isWhiteNav = scrolled || pathname !== '/'
+  // const isWhiteNav = scrolled || pathname !== '/'
+  const isWhiteNav = scrolled 
   const NAVBAR_HEIGHT = isWhiteNav ? 'h-14' : 'h-20'
   const TOP_HEIGHT = isWhiteNav ? 'top-14' : 'top-20'
   const DROPDOWNSIZE = isWhiteNav ? 'h-[calc(100vh-56px)]' : 'h-[calc(100vh-80px)]'
@@ -45,7 +46,7 @@ export const Navbar = () => {
       className={`
         fixed flex items-center z-40 px-4 text-base transition-all duration-300
         ${NAVBAR_HEIGHT} w-full ${textColor}
-        ${darkenBg && !isWhiteNav ? 'bg-black/70' : isWhiteNav ? 'bg-white shadow-md' : 'bg-linear-to-b from-black/50 to-transparent'}
+        ${darkenBg && !isWhiteNav ? 'bg-black/70' : isWhiteNav ? 'bg-white shadow-md' : 'bg-linear-to-b from-black to-transparent'}
         
       `}
     >

@@ -15,49 +15,47 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div>
-      <main className="">
-        {/* HERO */}
-        <HeroHomeSection />
+    <main className="">
+      {/* HERO */}
+      <HeroHomeSection />
 
-        <div className="shadow-[0_5px_25px_rgba(0,0,0,0.20)]">
-          {/* ABOUT */}
-          <BodyWrapper className="py-24 bg-white">
-            <AboutHomeSection />
-          </BodyWrapper>
-
-          {/* STATS */}
-          <StatCounter />
-
-          {/* VIDEO */}
-          <BodyWrapper className="py-14 lg:py-24 bg-brand-pink/50 backdrop-blur-md">
-            <VideoHomeSection />
-          </BodyWrapper>
-        </div>
-
-        {/* CHOOSE US */}
-        <BodyWrapper className="">
-          <ChooseUsHomeSection />
+      <div className="shadow-[0_5px_25px_rgba(0,0,0,0.20)]">
+        {/* ABOUT */}
+        <BodyWrapper className="py-24 bg-white">
+          <AboutHomeSection />
         </BodyWrapper>
 
-        <div className="shadow-[0px_10px_25px_10px_rgba(0,0,0,0.20)]">
-          {/* BRAND */}
-          <BrandHomeSection />
+        {/* STATS */}
+        <StatCounter />
 
-          {/* CREDIBILITY */}
-          <BodyWrapper className="py-10 sm:py-24 bg-brand-pink" id='certified-component'>
-            <CredibilityHomeSection />
-          </BodyWrapper>
+        {/* VIDEO */}
+        <BodyWrapper className="py-14 lg:py-24 bg-brand-pink/50 backdrop-blur-md">
+          <VideoHomeSection />
+        </BodyWrapper>
+      </div>
 
-          {/* PRODUCTS */}
-          <BodyWrapper className="py-24 bg-white">
-            <div className="space-y-20">
-              <ProductHomeSection />
-              <ProductHomeSection />
-            </div>
-          </BodyWrapper>
-        </div>
-      </main>
-    </div>
+      {/* CHOOSE US */}
+      <BodyWrapper className="">
+        <ChooseUsHomeSection />
+      </BodyWrapper>
+
+      <div className="shadow-[0px_10px_25px_10px_rgba(0,0,0,0.20)]">
+        {/* BRAND */}
+        <BrandHomeSection />
+
+        {/* CREDIBILITY */}
+        <BodyWrapper className="py-10 sm:py-24 bg-brand-pink" id='certified-component'>
+          <CredibilityHomeSection />
+        </BodyWrapper>
+
+        {/* PRODUCTS */}
+        <BodyWrapper className="py-24 bg-white">
+          <div className="space-y-20">
+            <ProductHomeSection />
+            <ProductHomeSection />
+          </div>
+        </BodyWrapper>
+      </div>
+    </main>
   );
 }
