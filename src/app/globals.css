@@ -163,15 +163,15 @@
 }
 
 .h2-md-format {
-  @apply text-2xl sm:text-3xl xl:text-4xl font-bold leading-10 sm:leading-12 text-balance;
+  @apply text-2xl sm:text-3xl xl:text-4xl font-bold leading-10 sm:leading-12 xl:leading-13 text-balance;
 }
 
 .h2-sm-format {
-  @apply text-2xl xl:text-3xl font-semibold xl:leading-10;
+  @apply text-2xl xl:text-3xl font-semibold xl:leading-12;
 }
 
 .h3-format {
-  @apply text-xl sm:text-2xl xl:text-3xl font-semibold;
+  @apply text-xl sm:text-2xl xl:text-3xl font-semibold leading-10 sm:leading-12;
 }
 
 .h3-sm-format {

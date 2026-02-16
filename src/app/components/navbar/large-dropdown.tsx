@@ -4,7 +4,6 @@ import { deviceProductMenu } from "@/lib/data"
 import Link from "next/link"
 import { INavbarMenu } from "@/interfaces/general"
 
-
 interface ILargeDropdown {
   name: string,
   NAVBAR_HEIGHT: string,

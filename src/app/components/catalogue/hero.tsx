@@ -1,23 +1,30 @@
 import { Breadcrumbs } from '@/app/components/breadcrumbs'
 import Image from 'next/image'
 
-export const HeroDevice = () => {
+interface IHeroDevice {
+  title: string
+  description: string
+  imgUrl: string
+  imgAlt: string
+}
+
+export const HeroDevice = ({title, description, imgUrl, imgAlt}:IHeroDevice) => {
   return (
-    <section className='w-full min-h-[70vh] sm:aspect-3/1 sm:min-h-96 relative flex flex-col px-5 sm:px-20 pb-24'>
+    <section className='w-full min-h-[80vh] relative flex flex-col px-5 sm:px-20 pb-24'>
       <div className='text-white mt-24 z-30'>
         <Breadcrumbs />
       </div>
       <div className='text-brand-peach z-30 text-shadow my-auto'>
         <h1 className='h2-format'>
-          Alma Harmony
+          {title}
         </h1>
         <h2 className='h2-sm-format text-base! sm:text-2xl!'>
-          Effortlessly Integrating Technologies
+          {description}
         </h2>
       </div>
       <Image
-        src={'/image/Alma-Harmony-header.jpg'}
-        alt='alma-harmony'
+        src={imgUrl}
+        alt={imgAlt}
         fill
         className='object-cover object-top z-0'
       />

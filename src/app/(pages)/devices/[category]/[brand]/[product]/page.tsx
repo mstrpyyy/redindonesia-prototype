@@ -1,9 +1,9 @@
 import { BodyWrapper } from '@/app/components/body-wrapper'
-import { DropdownDevice } from '../../../components/dropdown'
-import { HeroDevice } from '../../../components/hero'
-import { HighlightDevice } from '../../../components/highlight'
-import { SectionNavDevice } from '../../../components/section-nav'
-import { GridListDevice } from '../../../components/grid-feature'
+import { DropdownDevice } from '../../../../../components/catalogue/dropdown'
+import { HeroDevice } from '../../../../../components/catalogue/hero'
+import { HighlightDevice } from '../../../../../components/catalogue/highlight'
+import { SectionNavDevice } from '../../../../../components/catalogue/section-nav'
+import { GridListDevice } from '../../../../../components/catalogue/grid-feature'
 import Viewer360 from '@/app/components/360-viewer'
 import {
   Sparkles,
@@ -13,7 +13,7 @@ import {
   Target
 } from "lucide-react"
 import { BasicCarousel } from '@/app/components/carousels'
-import { BeforeAfterDevice } from '../../../components/before-after'
+import { BeforeAfterDevice } from '../../../../../components/catalogue/before-after'
 
 const treatmentList = [
   {
@@ -180,7 +180,12 @@ export default function Page() {
   return (
     <main className=''>
       {/* HERO */}
-      <HeroDevice />
+      <HeroDevice
+        title='Alma Harmony'
+        description='Integrated Technologies. Unlimited Diversity'
+        imgUrl='/image/Alma-Harmony-2.jpg'
+        imgAlt='Alma Harmony'
+      />
 
       {/* SECTION NAV */}
       <SectionNavDevice
