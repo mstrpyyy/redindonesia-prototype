@@ -110,7 +110,7 @@ const deviceList = [
     name: 'Alma Harmony',
     desc: 'Cutting-edge multi-platform that integrates advanced technologies for high-performance treatments.',
     url: '/devices/medical-aesthetics/alma-laser/alma-harmony',
-    imgUrl: '/image/device-card/alma-harmony-card.png',
+    imgUrl: '/image/device-card/alma-Harmony-card.webp',
   },
   {
     name: 'Alma Hybrid',
