@@ -181,7 +181,7 @@ export const navMenus = [
   },
   {
     name: 'Media',
-    slug: 'media',
+    slug: '/media',
     type: 'link'
   },
   {
@@ -192,7 +192,7 @@ export const navMenus = [
   },
   {
     name: 'Contact',
-    slug: 'contact',
+    slug: '/contact',
     type: 'link'
   },
 ]

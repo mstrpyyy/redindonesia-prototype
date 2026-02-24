@@ -1,6 +1,5 @@
 import { ChevronDown } from "lucide-react"
 import { Fragment, useRef, useState, useEffect } from "react"
-import { deviceProductMenu } from "@/lib/data"
 import Link from "next/link"
 import { INavbarMenu } from "@/interfaces/general"
 
@@ -10,16 +9,17 @@ interface ILargeDropdown {
   TOP_HEIGHT: string,
   isWhiteNav: boolean,
   setDarkenBg: React.Dispatch<React.SetStateAction<boolean>>
+  menu: INavbarMenu[]
 }
 
-export const LargeDropdown = ({ name, NAVBAR_HEIGHT, TOP_HEIGHT, isWhiteNav, setDarkenBg }: ILargeDropdown) => {
+export const LargeDropdown = ({ name, NAVBAR_HEIGHT, TOP_HEIGHT, isWhiteNav, setDarkenBg, menu }: ILargeDropdown) => {
   const [open, setOpen] = useState(false)
   const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null)
   const dropdownRef = useRef<HTMLDivElement>(null)
-  const [activeParentSlug, setActiveParentSlug] = useState(deviceProductMenu[0].slug)
+  const [activeParentSlug, setActiveParentSlug] = useState(menu[0].slug)
   const [isTouchDevice, setIsTouchDevice] = useState(false)
   
-  const activeMenu = deviceProductMenu.find(menu => menu.slug === activeParentSlug)
+  const activeMenu = menu.find(menu => menu.slug === activeParentSlug)
 
   // Detect if it's a touch device
   useEffect(() => {
@@ -101,16 +101,16 @@ export const LargeDropdown = ({ name, NAVBAR_HEIGHT, TOP_HEIGHT, isWhiteNav, set
         >
           <div className="h-full bg-black/80 backdrop-blur-md border-y border-t-neutral-400 border-b-neutral-700 flex py-4">
             <div className="flex flex-col h-full w-64 border-r px-4">
-               {deviceProductMenu.map((parent, index) => (
+               {menu.map((parent, index) => (
                   <Fragment key={parent.slug}>
                     <ParentButton
                       name={parent.name}
-                      slug={parent.slug}
+                      slug={parent.slug!}
                       activeParentSlug={activeParentSlug}
                       setActiveParentSlug={setActiveParentSlug}
                     />
 
-                    {index !== deviceProductMenu.length - 1 && (
+                    {index !== menu.length - 1 && (
                       <div className="w-full border-t my-4" />
                     )}
                   </Fragment>
@@ -129,11 +129,12 @@ export const LargeDropdown = ({ name, NAVBAR_HEIGHT, TOP_HEIGHT, isWhiteNav, set
 interface IParentButton {
   name: string,
   slug: string,
-  activeParentSlug: string,
-  setActiveParentSlug: React.Dispatch<React.SetStateAction<string>>
+  activeParentSlug: string | null,
+  setActiveParentSlug: React.Dispatch<React.SetStateAction<string | null>> 
 }
 
 const ParentButton = ({name, slug, activeParentSlug, setActiveParentSlug}:IParentButton) => {
+
   return (
     <button 
       onClick={() => setActiveParentSlug(slug)}

@@ -3,6 +3,9 @@ import { HeroDevice } from '../../../../components/catalogue/hero'
 import { MediaDevice } from '@/app/components/catalogue/media'
 import { CenteredTextDevice } from '@/app/components/catalogue/text-center'
 import { DeviceFilterList } from '@/app/components/catalogue/device-list'
+import Image from 'next/image'
+import { Button } from '@/components/ui/button'
+import { FileDown } from 'lucide-react'
 
 const filterList = [
   {

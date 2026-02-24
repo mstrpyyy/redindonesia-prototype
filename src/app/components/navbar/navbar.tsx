@@ -17,6 +17,7 @@ export const Navbar = () => {
   const pathSegment = pathname.split('/')[1] || '/'
   const [darkenBg, setDarkenBg] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const [hideSearch, setHideSearch] = useState(false)
 
   // Determine if navbar should be white
   // const isWhiteNav = scrolled || pathname !== '/'
@@ -41,6 +42,16 @@ export const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  useEffect(() => {
+    if (!scrolled && pathname === '/') {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setHideSearch(true)
+    } else {
+      setHideSearch(false)
+    }
+    
+  }, [scrolled, pathname])
+
   return (
     <header 
       className={`
@@ -60,11 +71,11 @@ export const Navbar = () => {
        />
       </div>
 
-      <nav className="max-md:hidden ml-auto mr-8 lg:mx-auto">
+      <nav className={`max-md:hidden ml-auto mr-8 ${!hideSearch && 'lg:mx-auto'}`}>
         <ul className="flex items-center justify-center gap-4 lg:gap-6 xl:gap-10">
           {
             navMenus.map((menu, index) => {
-              if (menu.type === 'largeDropdown') {
+              if (menu.type === 'largeDropdown' && menu.menu) {
                 return (
                   <li key={index}>
                     <LargeDropdown
@@ -73,17 +84,19 @@ export const Navbar = () => {
                       TOP_HEIGHT={TOP_HEIGHT}
                       setDarkenBg={setDarkenBg} 
                       isWhiteNav={isWhiteNav} 
+                      menu={menu.menu}
                     />
                   </li>
                 )
               }
-              if (menu.type === 'smallDropdown') {
+              if (menu.type === 'smallDropdown' && menu.menu) {
                 return (
                   <li key={index}>
                     <SmallDropdown
                       name={menu.name}
                       NAVBAR_HEIGHT={NAVBAR_HEIGHT}
                       isWhiteNav={isWhiteNav} 
+                      menu={menu.menu}
                     />
                   </li>
                 )
@@ -104,16 +117,21 @@ export const Navbar = () => {
         </ul>
       </nav>
 
-      <div className="max-lg:hidden flex-1 lg:max-w-52 xl:max-w-64 flex items-center justify-end relative">
-        <Input 
-          className={`
-            max-lg:hidden w-28 focus:w-full rounded-full pr-8 border-2 transition-all duration-150 
-            ${isWhiteNav ? 'border-black placeholder:text-neutral-600' : 'border-white placeholder:text-neutral-300'}
-          `} 
-          placeholder="Search" 
-        />
-        <Search className="absolute right-3 top-1/2 -translate-y-1/2" size={20} />
-      </div>
+      {!hideSearch &&
+        <div className="max-lg:hidden flex-1 lg:max-w-52 xl:max-w-64 flex items-center justify-end relative">
+            <Input 
+              className={`
+                max-lg:hidden w-28 xl:w-50 focus:w-full rounded-full pr-12 focus:pr-9 xl:pr-9 border transition-all duration-150 
+                ${isWhiteNav ? 
+                  'border-neutral-500 placeholder:text-black focus:placeholder:text-neutral-500' 
+                  : 'border-white placeholder:text-neutral-300'
+                }
+              `} 
+              placeholder="Browse Our Products" 
+            />
+          <Search className="absolute right-3 top-1/2 -translate-y-1/2" size={20} />
+        </div>
+      }
 
       <button aria-label="Open Search" className="max-md:hidden lg:hidden">
         <Search aria-hidden className="" size={20} strokeWidth={3} />

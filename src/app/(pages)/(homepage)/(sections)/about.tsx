@@ -20,7 +20,7 @@ const aboutMenuList = [
     name: 'what',
     href: '/',
     bgImgUrl: '/image/about-image3.jpg',
-    labelImgUrl: '/image/red-what.png'
+    labelImgUrl: '/image/red-work.png'
   }
 ]
 

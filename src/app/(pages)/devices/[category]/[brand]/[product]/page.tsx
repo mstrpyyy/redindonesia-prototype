@@ -10,10 +10,14 @@ import {
   ScanLine,
   Sun,
   Waves,
-  Target
+  Target,
+  FileDown,
 } from "lucide-react"
 import { BasicCarousel } from '@/app/components/carousels'
 import { BeforeAfterDevice } from '../../../../../components/catalogue/before-after'
+import Image from 'next/image'
+import { Button } from '@/components/ui/button'
+import { DocumentDevice } from '@/app/components/catalogue/document'
 
 const treatmentList = [
   {
@@ -175,6 +179,18 @@ const beforeAfterList = [
   },        
 ]
 
+const heroDocList = [
+  {
+    title: 'Brochure',
+    href: '/files/brochure-alma-harmony.pdf',
+    // icon: <FileDown size={20} strokeWidth={1.5} />,
+  },
+  {
+    title: 'Applicator Index',
+    href: '/files/applicator-index-alma-harmony.pdf',
+    // icon: <FileDown size={20} strokeWidth={1.5} />,
+  }
+]
 
 export default function Page() {
   return (
@@ -183,9 +199,48 @@ export default function Page() {
       <HeroDevice
         title='Alma Harmony'
         description='Integrated Technologies. Unlimited Diversity'
-        imgUrl='/image/Alma-Harmony-2.jpg'
+        imgUrl='/image/Alma-Harmony-header.jpg'
         imgAlt='Alma Harmony'
-      />
+        heroDocs={heroDocList}
+      >
+        <div className='z-30 flex max-sm:flex-col items-start sm:items-center gap-2'>
+          <div>
+            <h3 className='text-brand-peach text-xs'>Device Certifications:</h3>
+            <p className='text-xxs text-neutral-400'>Click to download file</p>
+          </div>
+          <div className='flex gap-2 items-center'>
+            <Button variant={'transparent'} className='h-11 rounded-full flex items-center justify-center px-4'>
+              <Image 
+                src={'/image/logo-halal-notext-white.png'}
+                alt='logo-halal-white'
+                height={1080}
+                width={1080}
+                className='h-6 w-auto'
+              />
+              <p className='text-left text-xxs'>
+                Halal <br />
+                Indonesia
+              </p>
+            </Button>
+            <div className='h-8 border-l border-l-neutral-400' />
+            <Button variant={'transparent'} className=' h-11 gap-2 rounded-full' asChild>
+              <a href="/files/kemenkes-alma-harmony.pdf" target='_blank' rel='noopener noreferrer'>
+                <Image 
+                  src={'/image/kemenkes-white.png'}
+                  alt='logo-halal-white'
+                  height={1080}
+                  width={1080}
+                  className='h-6 w-auto'
+                />
+                <p className='text-left'>
+                  <span className='block font-bold text-xxs'>KEMENKES RI</span>
+                  <span className='block font-normal text-xxs'>AKL 21603521242</span>
+                </p>
+              </a>
+            </Button>
+          </div>
+        </div>
+      </HeroDevice>
 
       {/* SECTION NAV */}
       <SectionNavDevice
@@ -240,13 +295,25 @@ export default function Page() {
         </h2>
         <BasicCarousel 
           list={applicatorList}
-        />
+          />
+        <div className='flex w-full items-center justify-center mt-4'>
+          <Button asChild variant={'outlineSecondary'} className='h-12 hover:bg-black hover:text-white'>
+            <a href="/files/applicator-index-alma-harmony.pdf" target='_blank' rel='noopener noreferrer'>
+              Download Applicator Index
+              <FileDown strokeWidth={1.5} className='size-6 lg:size-7'  />
+            </a>
+          </Button>
+        </div>
       </BodyWrapper>
 
       <BeforeAfterDevice
         h2='Before & After'
         imageList={beforeAfterList}
       />
+
+      <BodyWrapper className='my-14'>
+        <DocumentDevice />
+      </BodyWrapper>
 
     </main>
   )

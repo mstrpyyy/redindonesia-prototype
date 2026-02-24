@@ -1,4 +1,5 @@
-import { Facebook, Instagram, Mail, Map, MapPin, MapPinned, Phone } from 'lucide-react'
+import { LinkedinOutlinedRounded, TiktokOutlinedRounded } from '@lineiconshq/react-lineicons'
+import { Facebook, Instagram, Linkedin, Mail, Map, MapPin, MapPinned, Phone } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
 
@@ -26,10 +27,20 @@ const socialMediaList = [
     icon: <Facebook />,
     href: 'https://www.facebook.com/radianelok/',
     text: 'PT. Radian Elok Distriversa'
+  },
+  {
+    icon: <Linkedin />,
+    href: 'https://www.instagram.com/radian.elok.distriversa/',
+    text: 'PT. Radian Elok Distriversa'
+  },
+  {
+    icon: <TiktokOutlinedRounded />,
+    href: 'https://www.facebook.com/radianelok/',
+    text: '@radianelok'
   }
 ]
 
-const helpList = [
+const supportList = [
   {
     href: '/',
     text: 'Registration & Documentation'
@@ -41,6 +52,10 @@ const helpList = [
   {
     href: '/',
     text: 'Marcom Inquiry'
+  },
+  {
+    href: '/',
+    text: 'Career '
   },
 ]
 
@@ -142,10 +157,10 @@ export const Footer = () => {
 
         {/* HELP */}
         <div className=''>
-          <FooterH2>Help</FooterH2>
+          <FooterH2>Support</FooterH2>
           
           <nav>
-            {helpList.map((item, index) => {
+            {supportList.map((item, index) => {
               return (
                 <MenuLink
                   key={index}
