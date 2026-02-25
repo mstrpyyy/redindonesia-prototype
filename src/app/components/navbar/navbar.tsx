@@ -11,13 +11,14 @@ import { SmallDropdown } from "./small-dropdown"
 import { navMenus } from "@/lib/data"
 import { SidebarMenu } from "./sidebar"
 import Image from "next/image"
+import Link from "next/link"
 
 export const Navbar = () => {
   const pathname = usePathname()
   const pathSegment = pathname.split('/')[1] || '/'
   const [darkenBg, setDarkenBg] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  const [hideSearch, setHideSearch] = useState(false)
+  const [hideSearch, setHideSearch] = useState(true)
 
   // Determine if navbar should be white
   // const isWhiteNav = scrolled || pathname !== '/'
@@ -43,13 +44,11 @@ export const Navbar = () => {
   }, [])
 
   useEffect(() => {
-    if (!scrolled && pathname === '/') {
-      // eslint-disable-next-line react-hooks/set-state-in-effect
-      setHideSearch(true)
-    } else {
-      setHideSearch(false)
+    const handleHideSearch = (val: boolean) => {
+      setHideSearch(val)
+
     }
-    
+    handleHideSearch(!scrolled && pathname === '/')    
   }, [scrolled, pathname])
 
   return (
@@ -61,7 +60,7 @@ export const Navbar = () => {
         
       `}
     >
-      <div className="flex-1 max-w-64 lg:max-w-52">
+      <Link href={'/'} className="flex-1 max-w-64 lg:max-w-52">
        <Image 
          src={isWhiteNav ? "/image/logo-red-black.png" : "/image/logo-red-white.png"} 
          alt="logo" 
@@ -69,7 +68,7 @@ export const Navbar = () => {
          height={91} 
          className={`${isWhiteNav ? 'w-32' : 'w-32 lg:w-48'}`} 
        />
-      </div>
+      </Link>
 
       <nav className={`max-md:hidden ml-auto mr-8 ${!hideSearch && 'lg:mx-auto'}`}>
         <ul className="flex items-center justify-center gap-4 lg:gap-6 xl:gap-10">

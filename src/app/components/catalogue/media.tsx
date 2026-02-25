@@ -16,19 +16,22 @@ export const MediaDevice = ({ videoUrl }: IMediaDevice) => {
   const [scale, setScale] = useState(0.5)
 
   useEffect(() => {
+    const handleScale = (val: number) => {
+      setScale(val)
+    }
     if (entry) {
       const ratio = entry.intersectionRatio
       const calculatedScale = 0.5 + ratio * 0.5
-      setScale(calculatedScale)
+      handleScale(calculatedScale)
     }
   }, [entry])
 
   return (
     <BodyWrapper className="my-14">
-      <section>
+      <section className='flex items-center justify-center'>
         <div
           ref={ref}
-          className="flex-1 rounded-2xl transition-transform duration-200 ease-out px-10"
+          className="w-full lg:max-w-[70vw] rounded-2xl transition-transform duration-200 ease-out"
           style={{
             transform: `scale(${scale})`,
           }}
