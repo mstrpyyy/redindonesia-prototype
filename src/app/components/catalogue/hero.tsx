@@ -18,7 +18,7 @@ interface IHeroDevice {
 
 export const HeroDevice = ({title, description, imgUrl, imgAlt, children, heroDocs}:IHeroDevice) => {
   return (
-    <section className='w-full min-h-[80vh] relative flex flex-col px-5 sm:px-20 pb-10'>
+    <section className='w-full h-screen sm:min-h-[80vh] relative flex flex-col px-5 sm:px-20 pb-10'>
       <div className='text-white mt-24 z-30'>
         <Breadcrumbs />
       </div>

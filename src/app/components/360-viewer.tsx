@@ -129,6 +129,7 @@ export default function Viewer360({
   }
 
   const handlePointerMove = (e: React.PointerEvent) => {
+    e.preventDefault()
     if (!isDragging.current || !isLoaded) return
 
     const delta = e.clientX - startX.current
@@ -184,10 +185,13 @@ export default function Viewer360({
         ref={canvasRef}
         width={width}
         height={height}
-        className={`relative z-10 w-full cursor-grab active:cursor-grabbing ${
+        className={`relative z-10 w-full cursor-grab active:cursor-grabbing touch-none ${
           !isVisible ? "hidden" : ""
         }`}
-        onPointerDown={handlePointerDown}
+        onPointerDown={(e) => {
+          e.preventDefault()
+          handlePointerDown(e)
+        }}
         onPointerMove={handlePointerMove}
         onPointerUp={handlePointerUp}
         onPointerLeave={handlePointerUp}

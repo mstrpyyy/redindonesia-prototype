@@ -194,7 +194,7 @@ const heroDocList = [
 
 export default function Page() {
   return (
-    <main className=''>
+    <main className='overflow-x-hidden'>
       {/* HERO */}
       <HeroDevice
         title='Alma Harmony'
