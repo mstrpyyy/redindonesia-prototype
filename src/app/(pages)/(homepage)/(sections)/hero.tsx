@@ -25,7 +25,7 @@ const socialMediaList = [
 
 export const HeroHomeSection = () => {
   return (
-    <section className="h-dvh w-full bg-[url(/image/Alma-Harmony-header.webp)] bg-top bg-cover flex flex-col items-center lg:items-start">
+    <section className="h-svh w-full bg-[url(/image/Alma-Harmony-header.webp)] bg-top bg-cover flex flex-col items-center lg:items-start">
       <div 
         className="
           flex-1 py-32 w-full flex flex-col justify-center 
