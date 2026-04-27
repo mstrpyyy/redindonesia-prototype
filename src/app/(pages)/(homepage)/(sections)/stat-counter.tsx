@@ -78,7 +78,7 @@ export const StatCounter = () => {
         {statList.map((item, index) => (
           <Fragment key={index}> 
             <div className="flex-1 max-md:text-center">
-              <p className="text-5xl md:text-4xl lg:text-5xl font-medium">
+              <p className="text-4xl lg:text-5xl font-medium">
                 {formatNumber(counts[index], item.value)}+
               </p>
               <p className="text-2xl md:text-xl font-light">{item.name}</p>

@@ -61,8 +61,8 @@ export const BrandHomeSection = () => {
       `}
     >
       <h2 className="h2-format title-limiter text-center mb-10 px-10">
-        Established Partnerships with Leading{' '}
-        <span className="text-brand-red">Global Brands</span>
+        Meet Our{' '}
+        <span className="text-brand-red">Brands</span>
       </h2>
 
       <Marquee

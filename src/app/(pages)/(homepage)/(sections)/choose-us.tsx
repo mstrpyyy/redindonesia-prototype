@@ -1,38 +1,38 @@
 "use client"
 
-import { BookOpenText, CircleStar, Globe, HeartHandshake, ShieldCheck, UserRoundCog } from 'lucide-react'
+import { CircleStar, Globe, HeartHandshake, ShieldCheck, BadgeCheck, UserRoundCog } from 'lucide-react'
 import Image from 'next/image'
 
 const qualityList = [
   {
+    icon: <BadgeCheck  size={40} strokeWidth={2} className='text-brand-red'  />,
+    title: 'TRUSTED & EXPERIENCED TEAM',
+    description: 'With over two decades of industry leadership, our team brings a wealth of clinical knowledge and strategic insight to every partnership, ensuring you are supported by true experts.',
+  },
+  {
     icon: <Globe size={40} strokeWidth={2} className='text-brand-red'  />,
-    title: 'Good Network',
-    description: 'Dedicated for more than 21 years in Aesthetic Medical Devices and Cosmoceutical Industries, we manage and serve more than 6,000 medical practitioners, high-end clinics, and hospitals in Indonesia.',
+    title: 'ESTABLISHED NATIONWIDE NETWORK',
+    description: 'Our extensive distribution and support network spans across Indonesia, providing top-tier dermatologists and surgeons with seamless access to global innovations and localized care.',
   },
   {
     icon: <CircleStar size={40} strokeWidth={2} className='text-brand-red'  />,
-    title: 'Established Brand',
-    description: 'Working with brands such as ALMA LASERS, INNOAESTHETICS, ME-LINE, and TEGODER COSMETICS. We value trust and professionalism in our work to maintain the highest possible product quality and aftersales service.',
-  },
-  {
-    icon: <BookOpenText size={40} strokeWidth={2} className='text-brand-red'  />,
-    title: 'Extended Training',
-    description: 'We provide high quality service and clinical education to our customers from our key opinion leader doctors and professional in-house trainers through workshop events and training visit programs.',
+    title: 'GOLD STANDARD CURATION',
+    description: 'We meticulously scour the globe for clinically proven, high-performance brands from Europe and the USA, ensuring your clinic stays ahead of industry trends with safe and effective technology.',
   },
   {
     icon: <UserRoundCog size={40} strokeWidth={2} className='text-brand-red'  />,
-    title: 'Experienced Service Support',
-    description: 'Our certified technicians provide the best quality service solution, maintenance, and repair all included under our one-year warranty.',
+    title: 'PROFESSIONAL TRAINING TEAM',
+    description: 'We provide comprehensive training and clinical courses to empower your staff with the technical mastery needed to harness the full potential of our devices and products.',
   },
   {
     icon: <HeartHandshake size={40} strokeWidth={2} className='text-brand-red'  />,
-    title: 'Aftersales Services',
-    description: 'Committed to creating long-term customer relationships and product satisfaction, we provide aftersales service for our equipment, marketing programs, and materials to help you best achieve your goals.',
+    title: 'TECHNICAL SUPPORT DEPARTMENT',
+    description: 'To ensure your clinic operates without interruption, we guarantee continuous after-sales services for all equipment, even after the warranty period concludes.',
   },
   {
     icon: <ShieldCheck size={40} strokeWidth={2} className='text-brand-red'  />,
-    title: 'Registered Products',
-    description: 'We comply with the highest industry standards and regulatory requirements. We are committed to good corporate governance, emphasizing transparency and responsibility.',
+    title: 'PRODUCT WARRANTY PERIOD',
+    description: 'All equipment and devices supplied by RED come with a one-year warranty covering all factory technical defects to ensure your investment remains fully protected.',
   },
 ]
 
@@ -42,7 +42,7 @@ export const ChooseUsHomeSection = () => {
     <section className='flex relative gap-20 py-20'>
       <div className=' flex-1'>
         <h2 className='mb-10 h2-format'>
-          Why Leading Aesthetic Medical Practitioners <span className='text-brand-red'>Choose Us</span>
+          WHY CHOOSE{' '}<span className='text-brand-red'>RED</span>{' '}?
         </h2>
 
          {qualityList.map((item, index) => {

@@ -29,12 +29,12 @@ export const HeroHomeSection = () => {
       <div 
         className="
           flex-1 py-32 w-full flex flex-col justify-center 
-          max-lg:bg-black/50 lg:bg-linear-to-r lg:from-black/70 lg:from-30% lg:to-70% lg:to-transparent 
-          px-14 text-white
+          max-lg:bg-black/60 lg:bg-linear-to-r lg:from-black/80 lg:from-20% lg:to-100% lg:to-transparent 
+          px-7 sm:px-14 text-white
         "
       >
-        <h1 className="text-3xl md:text-5xl font-bold max-lg:text-center text-brand-red">PT. Radian Elok Distriversa</h1>
-        <h2 className="text-lg md:text-2xl text-pretty mt-2 mb-8 max-lg:text-center">Lasers, Cosmeceutical & Medical Aesthetic Devices</h2>
+        <h1 className="text-4xl md:text-5xl font-bold max-lg:text-center text-brand-red text-shadow-md sm:text-balance w-full lg:w-150">Your Complete Medical Aesthetic Partner</h1>
+        <h2 className="text-lg md:text-2xl text-pretty mt-2 mb-8 max-lg:text-center">Powering the Future of Your Practice</h2>
         <div className="relative w-full lg:w-150">
           <Input 
             className="

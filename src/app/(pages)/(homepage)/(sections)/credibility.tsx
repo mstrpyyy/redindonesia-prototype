@@ -35,9 +35,8 @@ export const CredibilityHomeSection = () => {
 
       <div className='flex-2 my-auto flex flex-col gap-6 md:gap-10 xl:gap-10 2xl:gap-15 items-center'>
         <h2 className='h2-format text-center text-balance! xl:text-4xl! 2xl:text-5xl! xl:leading-12! 2xl:leading-16!'>
-          Experience Guided by{' '}
-          <span className='text-brand-red'>Trusted</span>
-          {' '}Industry Standards
+          Excellence Through {' '}
+          <span className='text-brand-red'>Certified Standards</span>
         </h2>
         <div className="flex max-sm:flex-wrap gap-8 items-center justify-center my-auto">
           {credibleList.map((item, index) => (

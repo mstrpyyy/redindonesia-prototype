@@ -67,15 +67,15 @@ export const AboutHomeSection = () => {
         data-aos-duration="1000"
       >
         <h2 className="h2-format">
-          <span className="text-brand-red text-4xl sm:text-5xl xl:text-6xl 2xl:text-7xl">21 Years</span>
+          <span className="text-brand-red text-4xl sm:text-5xl xl:text-6xl 2xl:text-7xl">22 Years</span>
           <br />
-            of Trusted Experience in{' '}
-          <br  />
-           Medical Aesthetics
+          <span className="text-balance block">
+            of Excellence in Medical Aesthetics
+          </span>
         </h2>
 
         <p className="p-format max-lg:mb-8 mt-4">
-          Established in 2004, PT. Radian Elok Distriversa has many years of experience and a broad network in the field of trading and distribution for medical aesthetic devices, medical laser devices, and cosmoceutical products. Headquartered in Jakarta, Indonesia, we work with many of the world’s leading companies in Europe and USA. Our clients include leading local plastic surgeons, dermatologists, and aesthetic general practitioners.
+          Since 2004, PT Radian Elok Distriversa has been a cornerstone of Indonesia&apos;s aesthetic industry. With over two decades of expertise, we specialize in the distribution of premium medical aesthetic devices, advanced laser platforms, and high-performance cosmeceuticals. Based in Jakarta, our extensive network bridges world-leading innovators from Europe and the USA with Indonesia&apos;s top plastic surgeons, dermatologists, and aesthetic practitioners.
         </p>
 
         <div className="max-lg:hidden flex-1 border-l-2 border-l-neutral-300 my-4" />
