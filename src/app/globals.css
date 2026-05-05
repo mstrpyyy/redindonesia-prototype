@@ -6,8 +6,10 @@
 @theme {
   --breakpoint-xs: 25rem;
   --color-brand-red: oklch(0.57 0.23 27);
+  --color-brand-red2: #ff0100;
   --color-brand-pink: #fce8e9;
   --color-brand-peach: #FFBD98;
+  --color-muted-bg: #fafafa;
   --text-xxs: 0.625rem;
 }
 
@@ -186,7 +188,6 @@
   @apply text-sm lg:text-base 2xl:text-lg font-light text-justify leading-6 lg:leading-7 2xl:leading-8;
 }
 
-
 .title-limiter {
   @apply max-w-[700px] xl:max-w-[900px] text-balance;
 }
@@ -195,3 +196,22 @@
   @apply text-shadow-[0px_0.5px_2px_rgba(0,0,0,1)]
 }
 
+.radial-gradient1 {
+  background: radial-gradient(
+      circle at 25% 35%,
+      #fce8e9 0%,
+      rgba(252, 232, 233, 0.6) 15%,
+      rgba(252, 232, 233, 0.15) 30%,
+      white 100%
+  );
+}
+
+.radial-gradient2 {
+  background: radial-gradient(
+      circle at 90% 90%,
+      #fce8e9 0%,
+      rgba(252, 232, 233, 0.6) 20%,
+      rgba(252, 232, 233, 0.15) 40%,
+      white 100%
+  );
+}

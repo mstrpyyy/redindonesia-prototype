@@ -15,7 +15,7 @@ import Link from "next/link"
 
 export const Navbar = () => {
   const pathname = usePathname()
-  const pathSegment = pathname.split('/')[1] || '/'
+  const pathSegment = pathname.split('/')[1] ? '/' + pathname.split('/')[1] : '/'
   const [darkenBg, setDarkenBg] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [hideSearch, setHideSearch] = useState(true)
@@ -27,6 +27,7 @@ export const Navbar = () => {
   const TOP_HEIGHT = isWhiteNav ? 'top-14' : 'top-20'
   const DROPDOWNSIZE = isWhiteNav ? 'h-[calc(100vh-56px)]' : 'h-[calc(100vh-80px)]'
   const textColor = isWhiteNav ? 'text-black' : 'text-white'
+
 
   const updateScrollEvent = useEffectEvent((isScrolled:boolean)=>{
     setScrolled(isScrolled)
@@ -121,7 +122,7 @@ export const Navbar = () => {
         <div className="max-lg:hidden flex-1 lg:max-w-52 xl:max-w-64 flex items-center justify-end relative">
             <Input 
               className={`
-                max-lg:hidden w-28 xl:w-50 focus:w-full rounded-full pr-12 focus:pr-9 xl:pr-9 border transition-all duration-150 
+                max-lg:hidden w-28 xl:w-50 focus:w-full rounded-full pr-12 focus:pr-9 xl:pr-9 border transition-all duration-150 backdrop-blur-md
                 ${isWhiteNav ? 
                   'border-neutral-500 placeholder:text-black focus:placeholder:text-neutral-500' 
                   : 'border-white placeholder:text-neutral-300'

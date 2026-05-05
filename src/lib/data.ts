@@ -174,6 +174,11 @@ export const navMenus = [
     type: 'link'
   },
   {
+    name: 'About',
+    slug: '/about',
+    type: 'link'
+  },
+  {
     name: 'Devices & Products',
     slug: null,
     type: 'largeDropdown',
@@ -195,4 +200,19 @@ export const navMenus = [
     slug: '/contact',
     type: 'link'
   },
+]
+
+export const brandList = [
+  { src: '/image/brand1.png', link:'/' },
+  { src: '/image/brand2.png', link:'/' },
+  { src: '/image/brand3.png', link:'/' },
+  { src: '/image/brand4.png', link:'/' },
+  { src: '/image/brand5.png', link:'/' },
+  { src: '/image/brand6.png', link:'/' },
+  { src: '/image/brand7.png', link:'/' },
+  { src: '/image/brand8.png', link:'/' },
+  { src: '/image/brand9.png', link:'/' },
+  { src: '/image/brand10.png', link:'/' },
+  { src: '/image/brand11.png', link:'/' },
+  { src: '/image/brand12.png', link:'/' },
 ]

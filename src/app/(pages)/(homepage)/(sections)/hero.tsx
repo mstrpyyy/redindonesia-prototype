@@ -2,6 +2,7 @@ import { Input } from "@/components/ui/input";
 import { FacebookOutlinedRounded, InstagramOutlinedRounded, LinkedinOutlinedRounded, TiktokOutlinedRounded } from "@lineiconshq/react-lineicons";
 
 import { Search } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 const socialMediaList = [
@@ -25,11 +26,19 @@ const socialMediaList = [
 
 export const HeroHomeSection = () => {
   return (
-    <section className="h-svh w-full bg-[url(/image/Alma-Harmony-header.webp)] bg-top bg-cover flex flex-col items-center lg:items-start">
+    <section className="h-svh w-full relative flex flex-col items-center lg:items-start">
+      <Image 
+        src="/image/Alma-Harmony-header.webp"
+        alt="Alma Harmony hero banner"
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover object-top z-0"
+      />
       <div 
         className="
-          flex-1 py-32 w-full flex flex-col justify-center 
-          max-lg:bg-black/60 lg:bg-linear-to-r lg:from-black/80 lg:from-20% lg:to-100% lg:to-transparent 
+          flex-1 py-32 w-full flex flex-col justify-center z-10 
+          max-lg:bg-black/60 lg:bg-linear-to-r lg:from-black/80 lg:from-30% lg:to-80% lg:to-transparent 
           px-7 sm:px-14 text-white
         "
       >

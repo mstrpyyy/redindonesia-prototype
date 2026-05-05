@@ -61,6 +61,8 @@ export const HeroDevice = ({title, description, imgUrl, imgAlt, children, heroDo
         src={imgUrl}
         alt={imgAlt}
         fill
+        priority
+        sizes="100vw"
         className='object-cover object-top z-0'
       />
     </section>

@@ -1,25 +1,11 @@
 'use client'
 
+import { brandList } from '@/lib/data'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import Marquee from 'react-fast-marquee'
 import { useInView } from 'react-intersection-observer'
-
-const brandList = [
-  { src: '/image/brand1.png', link:'/' },
-  { src: '/image/brand2.png', link:'/' },
-  { src: '/image/brand3.png', link:'/' },
-  { src: '/image/brand4.png', link:'/' },
-  { src: '/image/brand5.png', link:'/' },
-  { src: '/image/brand6.png', link:'/' },
-  { src: '/image/brand7.png', link:'/' },
-  { src: '/image/brand8.png', link:'/' },
-  { src: '/image/brand9.png', link:'/' },
-  { src: '/image/brand10.png', link:'/' },
-  { src: '/image/brand11.png', link:'/' },
-  { src: '/image/brand12.png', link:'/' },
-]
 
 export const BrandHomeSection = () => {
    const { ref: brandRef, inView: brandFullyVisible } = useInView({
