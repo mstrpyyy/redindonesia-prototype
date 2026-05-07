@@ -1,13 +1,13 @@
-import { BodyWrapper } from "@/app/components/body-wrapper";
-import { AboutHomeSection } from "./(sections)/about";
-import { HeroHomeSection } from "./(sections)/hero";
-import { StatCounter } from "./(sections)/stat-counter";
-import { VideoHomeSection } from "./(sections)/video";
-import { ChooseUsHomeSection } from "./(sections)/choose-us";
-import { CredibilityHomeSection } from "./(sections)/credibility";
-import { BrandHomeSection } from "./(sections)/brand";
-import { ProductHomeSection } from "./(sections)/products";
+import { BodyWrapper } from "@/app/components/BodyWrapper";
+import { HeroHomeSection } from "./(sections)/Hero";
+import { StatCounter } from "./(sections)/StatCounter";
+import { ChooseUsHomeSection } from "./(sections)/ChooseUs";
+import { CredibilityHomeSection } from "./(sections)/Credibility";
 import { Metadata } from "next";
+import { AboutHomeSection } from "./(sections)/About";
+import { VideoHomeSection } from "./(sections)/Video";
+import { BrandHomeSection } from "./(sections)/Brand";
+import { ProductHomeSection } from "./(sections)/Products";
 
 export const metadata: Metadata = {
   title: 'Home'

@@ -4,7 +4,7 @@ import Link from 'next/link'
 import React from 'react'
 
 export const AboutWhat = () => {
-  return (
+  return (  
     <section className=''>
       <h2 className="sr-only">What is RED?</h2>
       <Image src={'/image/red-what.png'} alt='red-what' width={1654} height={500} className='w-56 sm:w-72' />

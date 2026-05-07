@@ -1,4 +1,4 @@
-import { BodyWrapper } from '@/app/components/body-wrapper'
+import { BodyWrapper } from '@/app/components/BodyWrapper'
 import React from 'react'
 
 export const SocialMedia = () => {

@@ -1,6 +1,6 @@
 'use client'
 
-import { BodyWrapper } from '../body-wrapper'
+import { BodyWrapper } from '../BodyWrapper'
 import { useInView } from 'react-intersection-observer'
 import { useEffect, useState } from 'react'
 

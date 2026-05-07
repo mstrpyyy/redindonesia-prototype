@@ -1,4 +1,4 @@
-import { Breadcrumbs } from '@/app/components/breadcrumbs'
+import { Breadcrumbs } from '@/app/components/Breadcrumbs'
 import { Button } from '@/components/ui/button'
 import { FileDown } from 'lucide-react'
 import Image from 'next/image'

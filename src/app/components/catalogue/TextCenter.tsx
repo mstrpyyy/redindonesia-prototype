@@ -1,5 +1,5 @@
 import React from 'react'
-import { BodyWrapper } from '../body-wrapper'
+import { BodyWrapper } from '../BodyWrapper'
 
 interface ICenteredTextDevice {
   h2?: string

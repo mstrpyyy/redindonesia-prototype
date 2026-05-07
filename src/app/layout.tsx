@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Navbar } from "./components/navbar/navbar";
+import { Navbar } from "./components/navbar/Navbar";
 import localFont from 'next/font/local'
-import AOSProvider from "@/providers/aos-provider";
-import { Footer } from "./components/footer";
-import { Bumper } from "./components/bumper";
+import AOSProvider from "@/providers/AosProvider";
+import { Footer } from "./components/Footer";
+import { Bumper } from "./components/Bumper";
 
 const jakarta = localFont({
   src: [

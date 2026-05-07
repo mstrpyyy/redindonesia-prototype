@@ -1,5 +1,5 @@
-import { BeforeAfterImage, IBeforeAfter } from "@/app/components/before-after"
-import { BodyWrapper } from "@/app/components/body-wrapper"
+import { BeforeAfterImage, IBeforeAfter } from "@/app/components/BeforeAfter"
+import { BodyWrapper } from "@/app/components/BodyWrapper"
 
 interface IBeforeAfterDevice {
   h2: string

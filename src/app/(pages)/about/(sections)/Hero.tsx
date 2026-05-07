@@ -1,4 +1,4 @@
-import { NavbarBg } from '@/app/components/navbar/navbar-bg'
+import { NavbarBg } from '@/app/components/navbar/NavbarBg'
 import Image from 'next/image'
 import React from 'react'
 

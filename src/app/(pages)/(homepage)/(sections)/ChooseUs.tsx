@@ -71,7 +71,7 @@ export const ChooseUsHomeSection = () => {
       <div className='flex-1 relative max-lg:hidden'>
         <Image
           alt='fixed image'
-          src='/image/fixed-hand.png'
+          src='/image/home/hand-holding-transparent.webp'
           width={683}
           height={715}
           className='fixed bottom-0 h-[48vw] w-[48vw] right-0 -z-40' 

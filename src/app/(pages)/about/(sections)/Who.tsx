@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import { AboutVideo } from './video'
 
 export const AboutWho = () => {
   return (

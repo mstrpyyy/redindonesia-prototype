@@ -1,4 +1,4 @@
-import { BodyWrapper } from '@/app/components/body-wrapper'
+import { BodyWrapper } from '@/app/components/BodyWrapper'
 import Image from 'next/image'
 import React from 'react'
 

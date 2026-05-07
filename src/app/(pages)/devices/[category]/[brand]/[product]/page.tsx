@@ -1,10 +1,9 @@
-import { BodyWrapper } from '@/app/components/body-wrapper'
-import { DropdownDevice } from '../../../../../components/catalogue/dropdown'
-import { HeroDevice } from '../../../../../components/catalogue/hero'
-import { HighlightDevice } from '../../../../../components/catalogue/highlight'
-import { SectionNavDevice } from '../../../../../components/catalogue/section-nav'
-import { GridListDevice } from '../../../../../components/catalogue/grid-feature'
-import Viewer360 from '@/app/components/360-viewer'
+import { BodyWrapper } from '@/app/components/BodyWrapper'
+import { HeroDevice } from '../../../../../components/catalogue/Hero'
+import { HighlightDevice } from '../../../../../components/catalogue/Highlight'
+import { SectionNavDevice } from '../../../../../components/catalogue/SectionNav'
+import { GridListDevice } from '../../../../../components/catalogue/GridFeature'
+import Viewer360 from '@/app/components/Viewer360'
 import {
   Sparkles,
   ScanLine,
@@ -13,11 +12,12 @@ import {
   Target,
   FileDown,
 } from "lucide-react"
-import { BasicCarousel } from '@/app/components/carousels'
-import { BeforeAfterDevice } from '../../../../../components/catalogue/before-after'
+import { BasicCarousel } from '@/app/components/Carousels'
+import { BeforeAfterDevice } from '../../../../../components/catalogue/BeforeAfter'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
-import { DocumentDevice } from '@/app/components/catalogue/document'
+import { DocumentDevice } from '@/app/components/catalogue/Document'
+import { DropdownDevice } from '@/app/components/catalogue/Dropdown'
 
 const treatmentList = [
   {

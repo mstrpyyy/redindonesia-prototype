@@ -2,7 +2,7 @@ import { MenuIcon, Search } from 'lucide-react'
 import { useState } from 'react'
 import { navMenus } from '@/lib/data'
 import Link from 'next/link'
-import { DropdownNavButton } from './sidebar-dropdown'
+import { DropdownNavButton } from './SidebarDropdown'
 
 interface ISidebar {
   pathname: string,

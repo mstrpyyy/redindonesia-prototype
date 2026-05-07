@@ -1,6 +1,6 @@
 import React from 'react'
-import { BodyWrapper } from '../body-wrapper'
-import { CatalogueFilter, IFilterList } from './filter'
+import { BodyWrapper } from '../BodyWrapper'
+import { CatalogueFilter, IFilterList } from './Filter'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'

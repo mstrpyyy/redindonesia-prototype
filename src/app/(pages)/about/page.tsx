@@ -1,9 +1,9 @@
-import { BodyWrapper } from "@/app/components/body-wrapper";
-import { AboutHero } from "./(sections)/hero";
-import { AboutWho } from "./(sections)/who";
-import { AboutWhat } from "./(sections)/what";
-import { AboutWork } from "./(sections)/work";
-import { AboutVideo } from "./(sections)/video";
+import { BodyWrapper } from "@/app/components/BodyWrapper";
+import { AboutWho } from "./(sections)/Who";
+import { AboutWhat } from "./(sections)/What";
+import { AboutWork } from "./(sections)/Work";
+import { AboutHero } from "./(sections)/Hero";
+import { AboutVideo } from "./(sections)/Video";
 
 
 export default function About() {

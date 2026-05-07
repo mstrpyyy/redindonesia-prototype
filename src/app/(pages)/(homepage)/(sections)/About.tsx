@@ -7,20 +7,20 @@ const aboutMenuList = [
   {
     name: 'who',
     href: '/',
-    bgImgUrl: '/image/about-image1.jpg',
-    labelImgUrl: '/image/red-who.png'
+    bgImgUrl: '/image/about/about-img5.jpg',
+    labelImgUrl: '/image/home/red-what.webp'
   },
   {
     name: 'what',
     href: '/',
-    bgImgUrl: '/image/about-image2.jpg',
-    labelImgUrl: '/image/red-what.png'
+    bgImgUrl: '/image/about/about-img8.jpg',
+    labelImgUrl: '/image/home/red-who.webp'
   },
   {
     name: 'what',
     href: '/',
-    bgImgUrl: '/image/about-image3.jpg',
-    labelImgUrl: '/image/red-work.png'
+    bgImgUrl: '/image/about/about-img1.jpg',
+    labelImgUrl: '/image/home/red-work.webp'
   }
 ]
 
@@ -41,14 +41,14 @@ export const AboutHomeSection = () => {
             className="relative w-full h-36 sm:h-44 bg-cover bg-center rounded-2xl overflow-hidden shadow-md"
             style={{ backgroundImage: `url(${item.bgImgUrl})` }}
           >
-            <div className="absolute inset-0 bg-linear-to-t from-white to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-r from-white from-0% via-white/90 via-50% to-transparent to-100%" />
 
             <Image
               src={item.labelImgUrl}
               alt={item.name}
               width={1376}
               height={200}
-              className="h-10 lg:h-14 w-fit absolute bottom-4 left-4"
+              className="h-24 lg:h-44 w-auto absolute -translate-y-1/2 top-1/2 left-0 lg:-left-6"
             />
 
             <div className="absolute right-2 top-2 bg-white/70 text-black flex items-center gap-2 px-2 py-1 rounded-full text-sm font-medium">
