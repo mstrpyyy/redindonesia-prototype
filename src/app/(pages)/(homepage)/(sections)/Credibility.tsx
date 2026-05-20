@@ -25,18 +25,18 @@ export const CredibilityHomeSection = () => {
   return (
     <section className='flex gap-8 xl:gap-10 2xl:gap-20'>
 
-      <Image
+      {/* <Image
         src={'/image/group-photo.png'}
         alt='group photo'
         width={347}
         height={381}
         className='object-cover grayscale rounded-2xl aspect-square max-lg:hidden' 
-      />
+      /> */}
 
       <div className='flex-2 my-auto flex flex-col gap-6 md:gap-10 xl:gap-10 2xl:gap-15 items-center'>
         <h2 className='h2-format text-center text-balance! xl:text-4xl! 2xl:text-5xl! xl:leading-12! 2xl:leading-16!'>
           Excellence Through {' '}
-          <span className='text-brand-red'>Certified Standards</span>
+          <span className='text-brand-red block'>Certified Standards</span>
         </h2>
         <div className="flex max-sm:flex-wrap gap-8 items-center justify-center my-auto">
           {credibleList.map((item, index) => (

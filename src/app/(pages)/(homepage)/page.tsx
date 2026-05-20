@@ -8,6 +8,7 @@ import { AboutHomeSection } from "./(sections)/About";
 import { VideoHomeSection } from "./(sections)/Video";
 import { BrandHomeSection } from "./(sections)/Brand";
 import { ProductHomeSection } from "./(sections)/Products";
+import { almaCarouselList, innoCarouselList } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: 'Home'
@@ -51,8 +52,18 @@ export default function Home() {
         {/* PRODUCTS */}
         <BodyWrapper className="py-24 bg-white">
           <div className="space-y-20">
-            <ProductHomeSection />
-            <ProductHomeSection />
+            <ProductHomeSection
+              title="Alma Laser"
+              href="/devices/medical-aesthetics/alma-laser"
+              size="md"
+              carouselList={almaCarouselList}
+            />
+            <ProductHomeSection 
+              title="INNO CE"
+              href="/devices/medical-aesthetics/inno-ce"
+              size="sm"
+              carouselList={innoCarouselList}
+            />
           </div>
         </BodyWrapper>
       </div>

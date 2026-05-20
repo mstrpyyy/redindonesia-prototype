@@ -203,16 +203,93 @@ export const navMenus = [
 ]
 
 export const brandList = [
-  { src: '/image/brand1.png', link:'/' },
-  { src: '/image/brand2.png', link:'/' },
-  { src: '/image/brand3.png', link:'/' },
-  { src: '/image/brand4.png', link:'/' },
-  { src: '/image/brand5.png', link:'/' },
-  { src: '/image/brand6.png', link:'/' },
-  { src: '/image/brand7.png', link:'/' },
-  { src: '/image/brand8.png', link:'/' },
-  { src: '/image/brand9.png', link:'/' },
-  { src: '/image/brand10.png', link:'/' },
-  { src: '/image/brand11.png', link:'/' },
-  { src: '/image/brand12.png', link:'/' },
+  { src: '/image/brand1.png', name: 'alma', link:'/' },
+  { src: '/image/brand4.png', name: 'innoaesthetics', link:'/' },
+  { src: '/image/brand5.png', name: 'meline', link:'/' },
+  { src: '/image/brand6.png', name: 'tegoder', link:'/' },
+  { src: '/image/brand7.png', name: 'skinforlife', link:'/' },
+  { src: '/image/brand9.png', name: 'bdr', link:'/' },
+  { src: '/image/brand10.png', name: 'burgeon', link:'/' },
+  { src: '/image/brand11.png', name: 'wellness', link:'/' },
+  // { src: '/image/brand2.png', name: 'almabeauty', link:'/' },
+  // { src: '/image/brand3.png', name: 'aestheticbyalma', link:'/' },
+  // { src: '/image/brand8.png', name: 'ionto', link:'/' },
+  // { src: '/image/brand12.png', name: 'tegor', link:'/' },
 ]
+
+export const almaCarouselList = [
+  {
+    img: '/image/home/alma-showcase/300ppi/Alma Duo.webp',
+    title: 'Alma Duo',
+    href: 'devices/medical-aesthetics/alma-laser/alma-harmony',
+  },
+  {
+    img: '/image/home/alma-showcase/300ppi/Alma Harmony.webp',
+    title: 'Alma Harmony',
+    href: 'devices/medical-aesthetics/alma-laser/alma-harmony',
+  },
+  {
+    img: '/image/home/alma-showcase/300ppi/Alma Hybrid.webp',
+    title: 'Alma Hybrid',
+    href: 'devices/medical-aesthetics/alma-laser/alma-harmony',
+  },
+  {
+    img: '/image/home/alma-showcase/300ppi/Alma PrimeX.webp',
+    title: 'Alma PrimeX',
+    href: 'devices/medical-aesthetics/alma-laser/alma-harmony',
+  },
+  {
+    img: '/image/home/alma-showcase/300ppi/ALMA-Q.webp',
+    title: 'Alma Q',
+    href: 'devices/medical-aesthetics/alma-laser/alma-harmony',
+  },
+  {
+    img: '/image/home/alma-showcase/300ppi/Soprano Titanium Special Edition.webp',
+    title: 'Soprano Titanium Special Edition',
+    href: 'devices/medical-aesthetics/alma-laser/alma-harmony',
+  },
+  {
+    img: '/image/home/alma-showcase/300ppi/Soprano Titanium.webp',
+    title: 'Soprano Titanium',
+    href: 'devices/medical-aesthetics/alma-laser/alma-harmony',
+  },
+]
+
+export const innoCarouselList = [
+  {
+    img: '/image/home/inno-showcase/INNO CE BIDENS.webp',
+    title: 'INNO CE-BIDENS',
+    href: 'devices/medical-aesthetics/alma-laser/alma-harmony',
+  },
+  {
+    img: '/image/home/inno-showcase/INNO CE MESHA DEEP.webp',
+    title: 'INNO CE MESHA Deep',
+    href: 'devices/medical-aesthetics/alma-laser/alma-harmony',
+  },
+  {
+    img: '/image/home/inno-showcase/INNO CE MESHA ESSENCE.webp',
+    title: 'INNO CE MESHA Essence',
+    href: 'devices/medical-aesthetics/alma-laser/alma-harmony',
+  },
+  {
+    img: '/image/home/inno-showcase/INNO CE MESHA INTENSE.webp',
+    title: 'INNO CE MESHA Intense',
+    href: 'devices/medical-aesthetics/alma-laser/alma-harmony',
+  },
+  {
+    img: '/image/home/inno-showcase/INNO CE MESHA SCARS.webp',
+    title: 'INNO CE MESHA Scars',
+    href: 'devices/medical-aesthetics/alma-laser/alma-harmony',
+  },
+  {
+    img: '/image/home/inno-showcase/INNO CE MESHA SMILE.webp',
+    title: 'INNO CE MESHA Smile',
+    href: 'devices/medical-aesthetics/alma-laser/alma-harmony',
+  },
+  {
+    img: '/image/home/inno-showcase/INNO CE MOIST.webp',
+    title: 'INNO CE Moist',
+    href: 'devices/medical-aesthetics/alma-laser/alma-harmony',
+  },
+]
+

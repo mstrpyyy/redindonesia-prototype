@@ -74,17 +74,17 @@ export const StatCounter = () => {
       ref={ref}
       className='w-full py-8 flex items-center justify-center bg-brand-red text-white'
     >
-      <div className="body-container-limit flex max-md:flex-col items-center justify-center gap-4">
+      <div className="body-container-limit flex max-sm:flex-col items-center justify-center gap-4">
         {statList.map((item, index) => (
           <Fragment key={index}> 
             <div className="flex-1 max-md:text-center">
-              <p className="text-4xl lg:text-5xl font-medium">
+              <p className="text-5xl sm:text-3xl md:text-4xl lg:text-5xl font-medium">
                 {formatNumber(counts[index], item.value)}+
               </p>
-              <p className="text-2xl md:text-xl font-light">{item.name}</p>
+              <p className="text-2xl sm:text-lg md:text-xl font-light">{item.name}</p>
             </div>
             {index !== statList.length - 1 &&
-              <div className="h-12 md:h-24 border-l border-l-white" />
+              <div className="h-10 sm:h-14 md:h-24 border-l border-l-white" />
             }
           </Fragment>
         ))}
