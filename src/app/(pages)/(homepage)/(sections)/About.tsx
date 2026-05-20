@@ -30,7 +30,7 @@ export const AboutHomeSection = () => {
     <section className="flex max-lg:flex-col-reverse gap-15">
       {/* MENU */}
       {/* <div className="lg:w-78 xl:w-84 space-y-6 space-x-4 flex flex-col md:flex-row lg:flex-col"> */}
-      <div className="gap-y-12 flex flex-col max-xs:items-center xs:flex-row justify-between xs:justify-evenly lg:flex-col">
+      <div className="gap-y-14 flex flex-col max-sm:items-center sm:flex-row sm:justify-evenly lg:flex-col">
         {aboutMenuList.map((item, index) => (
           <Link
             data-aos="fade-right"
@@ -51,7 +51,7 @@ export const AboutHomeSection = () => {
               width={1376}
               height={200}
               // className="h-24 lg:h-44 w-auto absolute -translate-y-1/2 top-1/2 left-0 lg:-left-6"
-              className="h-20 sm:h-32 lg:h-36 w-auto group-hover:scale-110 transition-all duration-200"
+              className="h-28 xs:h-32 lg:h-32 w-auto group-hover:scale-110 transition-all duration-200"
             />
             {/* <div className="absolute right-2 top-2 bg-white/70 text-black flex items-center gap-2 px-2 py-1 rounded-full text-sm font-medium">
               Read
