@@ -54,12 +54,14 @@ export default function Home() {
           <div className="space-y-20">
             <ProductHomeSection
               title="Alma Laser"
+              titleImg="/image/home/alma-showcase/300ppi/logo-alma.webp"
               href="/devices/medical-aesthetics/alma-laser"
               size="md"
               carouselList={almaCarouselList}
             />
             <ProductHomeSection 
               title="INNO CE"
+              titleImg="/image/home/inno-showcase/logo-inno-ce.webp"
               href="/devices/medical-aesthetics/inno-ce"
               size="sm"
               carouselList={innoCarouselList}
