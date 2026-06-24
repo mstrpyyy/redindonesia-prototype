@@ -110,10 +110,10 @@ export const deviceProductMenu = [
               },
             ],
           },
-          {
-            name: "BDR",
-            slug: "bdr",
-          },
+          // {
+          //   name: "BDR",
+          //   slug: "bdr",
+          // },
         ],
       },
       {
@@ -134,10 +134,10 @@ export const deviceProductMenu = [
         name: "Supplement",
         slug: "supplement",
         menu: [
-          {
-            name: "LABORATORIOS TEGOR",
-            slug: "laboratorios-tegor",
-          },
+          // {
+          //   name: "LABORATORIOS TEGOR",
+          //   slug: "laboratorios-tegor",
+          // },
           {
             name: "INNOAESTHETICS",
             slug: "innoaesthetics",
