@@ -15,6 +15,7 @@ export const SmallDropdown = ({name, NAVBAR_HEIGHT, isWhiteNav, menu}: ISmallDro
 
   return (
     <div
+      className="relative"
       onPointerEnter={() => setIsActive(true)}
       onPointerLeave={() => setIsActive(false)}
     >
@@ -35,7 +36,7 @@ export const SmallDropdown = ({name, NAVBAR_HEIGHT, isWhiteNav, menu}: ISmallDro
       {isActive &&
         <div
           className={`
-            h-fit w-54 bg-black/80 backdrop-blur-md border border-neutral-700 absolute top-full -translate-x-15 overflow-hidden
+            h-fit w-54 bg-black/80 backdrop-blur-md border border-neutral-700 absolute top-full left-1/2 -translate-x-1/2 overflow-hidden
             ${isWhiteNav ? '' : '-translate-y-4'}
           `}
         >

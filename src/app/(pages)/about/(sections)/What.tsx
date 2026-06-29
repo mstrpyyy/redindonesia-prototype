@@ -2,6 +2,7 @@ import { brandList } from '@/lib/data'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { IconImage } from '../_components/iconImage'
 
 export const AboutWhat = () => {
   return (  
@@ -10,7 +11,12 @@ export const AboutWhat = () => {
       <div className='flex flex-col lg:flex-row items-start lg:items-center gap-10 lg:gap-20'>
         <div className="p-sm-format text-justify flex-1">
           <div className="flex max-lg:justify-center">
-            <Image src={'/image/about/red-what.webp'} alt='red-what' width={1667} height={1250} className='w-56 sm:w-72' />
+            <IconImage
+              src={'/image/about/red-what-icon.webp'}
+              alt='red-what'
+              width={1081}
+              height={968}
+            />
           </div>
           <p className="mt-2">
             At RED, we believe that world-class clinical results are born from the perfect synergy between a practitioner&apos;s skill and the technology they wield. We don&apos;t just supply equipment; we cultivate long-term partnerships dedicated to elevating the standards of medical aesthetics in Indonesia.

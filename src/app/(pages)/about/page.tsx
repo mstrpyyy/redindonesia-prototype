@@ -24,7 +24,7 @@ export default function About() {
           </div>
         </div>
       </BodyWrapper>
-      <BodyWrapper className="py-20">
+      <BodyWrapper className="py-20 bg-secondary">
         <AboutWhat/>
       </BodyWrapper>
       <BodyWrapper className="radial-gradient2 py-20 shadow-[0_-2px_6px_0px_rgba(0,0,0,0.12)] relative z-10">

@@ -8,19 +8,19 @@ const aboutMenuList = [
     name: 'who',
     href: '/about#about-who',
     bgImgUrl: '/image/about/about-img5.jpg',
-    labelImgUrl: '/image/home/red-who-logo.webp'
+    labelImgUrl: '/image/about/red-who-icon.webp'
   },
   {
     name: 'what',
     href: '/about#about-what',
     bgImgUrl: '/image/about/about-img8.jpg',
-    labelImgUrl: '/image/home/red-what-logo.webp'
+    labelImgUrl: '/image/about/red-what-icon.webp'
   },
   {
     name: 'what',
     href: '/about#about-work',
     bgImgUrl: '/image/about/about-img1.jpg',
-    labelImgUrl: '/image/home/red-work-logo.webp'
+    labelImgUrl: '/image/about/red-work-icon.webp'
   }
 ]
 
@@ -30,7 +30,7 @@ export const AboutHomeSection = () => {
     <section className="flex max-lg:flex-col-reverse gap-15">
       {/* MENU */}
       {/* <div className="lg:w-78 xl:w-84 space-y-6 space-x-4 flex flex-col md:flex-row lg:flex-col"> */}
-      <div className="gap-y-14 flex flex-col max-sm:items-center sm:flex-row sm:justify-evenly lg:flex-col">
+      <div className="gap-y-10 flex flex-col max-sm:items-center sm:flex-row sm:justify-evenly lg:flex-col">
         {aboutMenuList.map((item, index) => (
           <Link
             data-aos="fade-right"
@@ -39,7 +39,7 @@ export const AboutHomeSection = () => {
             data-aos-delay={(index*150).toString()}
             key={index}
             href={item.href}
-            className="relative group h-28 xs:h-32 lg:h-32 aspect-square"
+            className="relative group h-28 xs:h-32 lg:h-36 aspect-square"
             // className="relative w-full h-36 sm:h-44 bg-cover bg-center rounded-2xl overflow-hidden shadow-md"
             // style={{ backgroundImage: `url(${item.bgImgUrl})` }}
           >

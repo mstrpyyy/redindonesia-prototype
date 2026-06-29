@@ -151,20 +151,35 @@ export const deviceProductMenu = [
 export const supportMenu = [
   {
     name: 'Registration & Documentation',
-    slug: '/registration-documentation',
+    slug: '/support/registration-documentation',
   },
   {
     name: 'Warranty & Service',
-    slug: '/warranty-service',
+    slug: '/support/warranty-service',
   },
   {
     name: 'Marcom & Promotion',
-    slug: '/marcom-promotion',
+    slug: '/support/marcom-promotion',
   },
   {
     name: 'Career',
-    slug: '/career',
+    slug: '/support/career',
   },
+]
+
+export const mediaMenu = [
+  {
+    name: 'Articles',
+    slug: '/media/articles',
+  },
+  {
+    name: 'Galleries',
+    slug: '/media/galleries',
+  },
+  {
+    name: 'Podcasts',
+    slug: '/media/podcasts',
+  }
 ]
 
 export const navMenus = [
@@ -187,7 +202,8 @@ export const navMenus = [
   {
     name: 'Media',
     slug: '/media',
-    type: 'link'
+    type: 'smallDropdown',
+    menu: mediaMenu
   },
   {
     name: 'Support',

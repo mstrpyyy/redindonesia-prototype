@@ -1,11 +1,17 @@
 import Image from 'next/image'
+import { IconImage } from '../_components/iconImage'
 
 export const AboutWho = () => {
   return (
       <section id='about-who' className="flex flex-col lg:flex-row justify-between items-center gap-10">
         <div className='flex-1 w-full'>
           <div className="flex max-lg:justify-center">
-            <Image src={'/image/about/red-who.webp'} alt='red-who' width={1667} height={1250} className='w-56 sm:w-72' />
+            <IconImage
+              src={'/image/about/red-who-icon.webp'}
+              alt='red-who'
+              width={987}
+              height={968}
+            />
           </div>
 
           <div className='p-6 sm:p-8 rounded-xl shadow-sm bg-white'>
